@@ -1,18 +1,20 @@
 <template>
-    <div>
-<p>Product details for {{  id }}</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quia magnam impedit minus repudiandae ad officiis quis eligendi facere quos, quod est recusandae enim omnis eaque. Molestias neque officia beatae.</p>
-    </div>
+  <div class="container mx-auto p-4">
+    <p>Product details for {{ id }}</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quia magnam impedit
+      minus repudiandae ad officiis quis eligendi facere quos, quod est recusandae enim
+      omnis eaque. Molestias neque officia beatae.
+    </p>
+  </div>
 </template>
 
 <script setup>
-const {id } = useRoute().params
+const { id } = useRoute().params;
 
 definePageMeta({
-    layout:'products'
+  layout: "products",
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

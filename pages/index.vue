@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <h2>home</h2>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid autem non
@@ -12,4 +11,12 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+p {
+  margin: 20px 0;
+}
+</style>
