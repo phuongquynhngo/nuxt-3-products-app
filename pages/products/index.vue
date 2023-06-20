@@ -18,6 +18,16 @@ definePageMeta({
 
   //  fetch the products
   const { data: products } = await useFetch('https://fakestoreapi.com/products')
+
+  //overwrite page title
+useHead({
+    title: 'Products App | Products',
+    meta: [
+      { name: 'description', content: 'Products'}
+    ]
+  })
+  
+
 </script>
 
 <style  scoped>

@@ -6,6 +6,12 @@
     <p>id: {{ product.id }}</p>
   </div> -->
   <div>
+ <!-- overwrite head title using built in component-->
+    <Head>
+      <Title>Nuxt Dojo | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
+
   <ProductDetails :product="product"/></div>
 </template>
 
@@ -25,6 +31,9 @@ if (!product.value) {
 definePageMeta({
   layout: "products",
 });
+
+
+
 </script>
 
 <style scoped></style>

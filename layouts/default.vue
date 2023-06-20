@@ -8,7 +8,7 @@
           <li><nuxt-link to="/">Home</nuxt-link></li>
           <li><nuxt-link to="/about">About</nuxt-link></li>
           <li><nuxt-link to="/products" class="btn">Products</nuxt-link></li>
-          <li><nuxt-link to="/products/abc" class="btn">abc products</nuxt-link></li>
+          <!-- <li><nuxt-link to="/products/abc" class="btn">abc products</nuxt-link></li> -->
         </ul>
         <!--<a href="/about">normal link to about page</a>
           internal and external links:  full page reloads -->
