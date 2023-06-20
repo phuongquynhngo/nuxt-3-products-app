@@ -1,10 +1,12 @@
 <template>
-  <div class="container mx-auto p-4">
+  <!-- <div class="container mx-auto p-4">
     <h2>Product details for {{ id }}</h2>
     <p>title: {{ product.title }}</p>
     <p>price: {{ product.price }}</p>
     <p>id: {{ product.id }}</p>
-  </div>
+  </div> -->
+  <div>
+  <ProductDetails :product="product"/></div>
 </template>
 
 <script setup>

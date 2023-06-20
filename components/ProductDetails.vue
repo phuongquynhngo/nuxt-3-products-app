@@ -1,0 +1,30 @@
+<template>
+  <div class="card">
+    <div class="grid grid-cols-2 gap-10">
+      <div class="p-7 select-none">
+        <img :src="`${product.image}`" class="mx-auto my-7" />
+      </div>
+      <div class="p-7 select-none">
+        <h2 class="text-4xl my-7">{{ product.title }}</h2>
+        <p class="text-xl my-7">Price - ${{ product.price }}</p>
+        <h3 class="font-bold border-b-2 mb-4 pb-2">Product description:</h3>
+        <p class="mb-7">{{ product.description }}</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const { product } = defineProps(["product"]);
+</script>
+
+<style scoped>
+img {
+  max-width: 350px;
+}
+@media (max-width: 767px) {
+  img {
+    max-width: 100%;
+  }
+}
+</style>
